@@ -14,6 +14,7 @@ import "./table.css";
 const TableComponent = ({}) => {
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(10);
+  const [pageUrl, setPageUrl] = React.useState(false);
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
@@ -40,8 +41,7 @@ const TableComponent = ({}) => {
       align: "center",
     },
   ];
-
-  // const columns = [
+  //    const columns = [
   //   { id: "userName", label: "User Name", minWidth: 170, align: "center" },
   //   {
   //     id: "userAddress",
@@ -57,7 +57,8 @@ const TableComponent = ({}) => {
   //     minWidth: 170,
   //     align: "center",
   //   },
-  // ];
+  // ]
+
   return (
     <div>
       <div className="tableData">

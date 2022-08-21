@@ -1,5 +1,6 @@
 import React from "react";
 import Sidebar from "../components/Sidebar/Sidebar";
+import TableComponent from "../components/table/Table";
 import "./pages.css";
 
 function ManageUsers() {
@@ -13,7 +14,9 @@ function ManageUsers() {
           <div className="logo">
             <h1>IOT device management</h1>
           </div>
-          <div className="lowerPart"></div>
+          <div className="lowerPart">
+            <TableComponent />
+          </div>
         </div>
       </div>
     </div>
