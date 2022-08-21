@@ -12,7 +12,7 @@ function App() {
   const [web3, setWeb3] = React.useState(null);
   useEffect(() => {
     async function load() {
-      // const web3 = new Web3(Web3.givenProvider || "http://localhost:7545");
+      const web3 = new Web3(Web3.givenProvider || "http://localhost:7545");
     }
   }, []);
   return (
